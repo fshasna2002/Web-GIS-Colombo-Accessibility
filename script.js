@@ -9,7 +9,7 @@
      - Schools.geojson    (points)
      - Banks.geojson      (points)
      - Parks.geojson      (points)
-     - Bus Stops.geojson  (points)
+     - BusStops.geojson  (points)
 
    If your file names differ, only the DATA_FILES object below needs to
    change — nothing else in the app depends on the file names.
