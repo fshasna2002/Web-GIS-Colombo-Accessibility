@@ -24,7 +24,7 @@ const DATA_FILES = {
   Schools:   'data/Schools.geojson',
   Banks:     'data/Banks.geojson',
   Parks:     'data/Parks.geojson',
-  BusStops:  'data/Bus stops.geojson'
+  BusStops:  'data/Bus_stops.geojson'
 };
 
 // Field names on the gn polygon layer (edit here if your schema differs)
