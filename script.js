@@ -457,3 +457,29 @@ async function init() {
 }
 
 init();
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="script.js"></script>
+
+const SUPABASE_URL = "https://ioqykthgbyyyckkncrpx.supabase.co/rest/v1/";
+const SUPABASE_ANON_KEY = "sb_publishable_TeW3UAuQEJtjFi2E0hNArA_tu2DMBzZ";
+
+const supabase = window.supabase.createClient(
+  SUPABASE_URL,
+  SUPABASE_ANON_KEY
+);
+
+async function testConnection() {
+  const { data, error } = await supabase
+    .from("community_feedback")
+    .select("*");
+
+  if (error) {
+    console.error("Supabase Error:", error);
+  } else {
+    console.log("Connected to Supabase!");
+    console.log(data);
+  }
+}
+
+testConnection();
